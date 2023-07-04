@@ -12,6 +12,14 @@ namespace Sandbox
         public MainWindow()
         {
             InitializeComponent();
+            dwwdw.Click += Dwwdw_Click;
+        }
+
+        private void Dwwdw_Click(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+        {
+            WindowStartupLocation = WindowStartupLocation.CenterScreen; // or set this in XAML
+            IsVisible = false;
+            IsVisible = true;
         }
     }
 }
